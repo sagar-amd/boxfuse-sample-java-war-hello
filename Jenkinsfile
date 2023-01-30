@@ -2,23 +2,24 @@ pipeline {
 
   agent any
   environment {
-      PATH = "/bin/mvn:$PATH"
+      PATH = "/usr/share/:$PATH"
   }
-  stages {
-      stage("git"){
+ 
+ stages {
+      stage("Get the code from git"){
           steps{
             git branch: 'master', url: 'https://github.com/GREATCODERHYD/boxfuse-sample-java-war-hello.git'
           
           }
       }
-      stage("build"){
+      stage("build the code"){
           steps{
               sh "mvn clean package"
           }
       }
-      stage("deploy"){
+      stage("deploy code in tomcat"){
           steps{
-             deploy adapters: [tomcat9(credentialsId: 'TOMCAT004CREDENTIALS', path: '', url: 'http://15.207.222.78:8080/')], contextPath: 'sample', war: '**/*.war'
+              deploy adapters: [tomcat9(credentialsId: '4a4df800-f614-47e6-ae1c-27a024eaac0d', path: '', url: 'http://54.236.53.175:8080')], contextPath: 'Harish', war: '**/*.war'
           }
       }
   }
