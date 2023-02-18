@@ -6,7 +6,14 @@
 <h1>75 % offer on costumes..!! ..!!! ..How are you today! check my website today</h1>
 <img src="boxfuse.png">
 
-<h2>You have created the delivery job on web app----DevOps Monk --- #######adding from dev###!</h2>
+<h2>You have created the delivery job on web app----DevOps Monk </h2>
+
+<font size="6"
+          face="verdana"
+          color="green">
+          GeeksforGeeks!
+    </font>
+    <br>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
