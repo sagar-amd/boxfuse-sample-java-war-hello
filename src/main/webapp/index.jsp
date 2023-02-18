@@ -11,7 +11,7 @@
 <font size="6"
           face="verdana"
           color="green">
-          GeeksforGeeks!
+          Good Luck !!!
     </font>
     <br>
 
